@@ -7,6 +7,7 @@ void main() {
 
   printf("Enter any number: ");
   scanf("%d", &input);
+  // removed last digit from input
   input = input / 10;
 
   while(input > 0) {
@@ -17,6 +18,7 @@ void main() {
       first_digit = input;
     }
   }
+  // removed first digit
   sum = sum - first_digit;
 
   printf("Sum excluding first and last digit is : %d\n", sum);
